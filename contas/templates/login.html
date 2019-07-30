@@ -1,0 +1,7 @@
+{{msg}}
+<h1>Login</h1>
+<form method="POST" action="/login">
+  {% csrf_token %}
+  <input type="email" name="email" placeholder="E-mail">
+  <input type="submit" value="Consultar">
+</form>

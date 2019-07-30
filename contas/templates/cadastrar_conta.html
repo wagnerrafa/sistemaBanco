@@ -1,0 +1,11 @@
+{{msg}}
+
+<h1>Cadastrar Conta {{pessoa.nome}}</h1>
+<form method="POST" action="/conta">
+  {% csrf_token %}
+  <input type="hidden" name="pessoa" value="{{pessoa.email}}">
+  <input type="text" name="numero_conta" placeholder="Número da conta" required>
+  <input type="text" name="saldo" placeholder="Saldo">
+  <input type="text" name="agencia" placeholder="Agência">
+  <input type="submit" value="Cadastrar Conta">
+</form>

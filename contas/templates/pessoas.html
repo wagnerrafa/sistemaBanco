@@ -1,0 +1,9 @@
+<h1>Pessoas</h1>
+
+{% for pessoa in dados %}
+  <div>
+    <p>Nome: {{pessoa.nome}}</p>
+    <p>CPF: {{pessoa.cpf}}</p>
+  </div>
+  <hr>
+{% endfor %}
